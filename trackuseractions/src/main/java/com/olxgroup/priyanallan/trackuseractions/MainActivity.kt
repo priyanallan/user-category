@@ -1,4 +1,4 @@
-package com.olxgroup.priyanallan.usercategories
+package com.olxgroup.priyanallan.trackuseractions
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,5 +9,4 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
 }

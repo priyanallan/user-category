@@ -1,4 +1,4 @@
-package com.olxgroup.priyanallan.usercategories
+package com.olxgroup.priyanallan.trackuseractions
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.olxgroup.priyanallan.usercategories", appContext.packageName)
+        assertEquals("com.olxgroup.priyanallan.trackuseractions", appContext.packageName)
     }
 }
