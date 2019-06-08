@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/historyFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.olxgroup.priyanallan.usercategories.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_catgoryItemsFragment"
+            app:destination="@id/catgoryItemsFragment"
+            app:popUpTo="@+id/categoryFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.olxgroup.priyanallan.usercategories.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catgoryItemsFragment"
+        android:name="com.olxgroup.priyanallan.usercategories.CatgoryItemsFragment"
+        android:label="fragment_catgory_items"
+        tools:layout="@layout/fragment_category_items" >
+        <action
+            android:id="@+id/action_catgoryItemsFragment_to_categoryItemDetailFragment"
+            app:destination="@id/categoryItemDetailFragment"
+            app:popUpTo="@+id/catgoryItemsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryItemDetailFragment"
+        android:name="com.olxgroup.priyanallan.usercategories.CategoryItemDetailFragment"
+        android:label="fragment_category_item_detail"
+        tools:layout="@layout/fragment_category_item_detail" />
+</navigation>
