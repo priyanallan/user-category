@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/categoryFragment"
-        android:name="com.olxgroup.priyanallan.usercategories.CategoryFragment"
+        android:name="com.olxgroup.priyanallan.usercategories.ui.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
-        android:name="com.olxgroup.priyanallan.usercategories.HistoryFragment"
+        android:name="com.olxgroup.priyanallan.usercategories.ui.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/catgoryItemsFragment"
-        android:name="com.olxgroup.priyanallan.usercategories.CatgoryItemsFragment"
+        android:name="com.olxgroup.priyanallan.usercategories.ui.CatgoryItemsFragment"
         android:label="fragment_catgory_items"
         tools:layout="@layout/fragment_category_items" >
         <action
@@ -38,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/categoryItemDetailFragment"
-        android:name="com.olxgroup.priyanallan.usercategories.CategoryItemDetailFragment"
+        android:name="com.olxgroup.priyanallan.usercategories.ui.CategoryItemDetailFragment"
         android:label="fragment_category_item_detail"
         tools:layout="@layout/fragment_category_item_detail" />
 </navigation>

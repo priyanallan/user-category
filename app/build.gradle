@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+def libs = rootProject.ext.libs
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -31,6 +33,23 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
+    implementation "androidx.core:core:$libs.androidx_core_version"
+
+
+    //Navigation Component
+    implementation "androidx.navigation:navigation-fragment-ktx:$libs.navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$libs.navigation_version"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$libs.retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$libs.okhttpinterceptor"
+
+    //Gson
+    implementation "com.google.code.gson:gson:$libs.gson_version"
+    implementation "com.squareup.retrofit2:converter-gson:$libs.retrofit_gson_version"
+
+    //Koin DI
+    implementation "org.koin:koin-android-viewmodel:$libs.koin_version"
+    implementation "org.koin:koin-android:$libs.koin_version"
+    implementation "org.koin:koin-androidx-scope:$libs.koin_version"
 }
