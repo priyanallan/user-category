@@ -38,7 +38,7 @@ class HistoryFragment : Fragment(), KoinComponent {
         super.onViewCreated(view, savedInstanceState)
 
         categoryViewModel.categoryTypes.observe(this, Observer {
-            Log.d("Category", it[0].author)
+            
         })
         categoryViewModel.getCategories(6)
     }
