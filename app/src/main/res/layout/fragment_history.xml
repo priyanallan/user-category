@@ -15,19 +15,22 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="@dimen/marginTop"
-        android:textSize="24sp"
+        android:textSize="@dimen/textSize_medium"
         android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/mostViewedCategoryImageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/mostViewedCategoryTitle"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/marginTop"
+        android:contentDescription="@string/most_viewed_category_content_desc"
+        app:layout_constraintBottom_toTopOf="@id/goToCategoriesButton"
+        app:layout_constraintHeight_percent="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:src="@drawable/ic_launcher_background"
-        android:layout_marginTop="@dimen/marginTop"
-        android:contentDescription="@string/most_viewed_category_content_desc" />
+        app:layout_constraintTop_toBottomOf="@id/mostViewedCategoryTitle"
+        tools:src="@tools:sample/backgrounds/scenic[3]"
+        android:fitsSystemWindows="true"/>
 
     <Button
         android:id="@+id/goToCategoriesButton"
@@ -38,6 +41,8 @@
         app:layout_constraintRight_toRightOf="parent"
         android:text="@string/go_to_categories"
         android:layout_marginTop="@dimen/marginTop"
+        android:textSize="@dimen/textSize_medium"
+        android:padding="@dimen/paddingButton"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,5 @@
     <string name="welcome_message">Welcome to our site!</string>
     <string name="go_to_categories">Go to Categories</string>
     <string name="most_viewed_category_content_desc">Most Viewed Category</string>
+    <string name="i_am_interested_in">I am interested in!</string>
 </resources>
